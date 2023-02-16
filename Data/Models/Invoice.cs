@@ -12,6 +12,6 @@ namespace Data.Models
         public string AppliedDiscountDescription { get; set; }
         public double TotalDiscount { get; set; }
         public double TotalAmount { get; set; }
-        public User User { get; set; }
+        public Customer Customer { get; set; }
     }
 }

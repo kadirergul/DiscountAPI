@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    public class User
+    public class Customer
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string UserName { get; set; }
+        public string SurName { get; set; }
         public string Email { get; set; }
         public bool IsCompanyEmployee { get; set; } = false;
         public bool IsInLoyaltyProgram { get; set; } = false;
+        public bool IsOverTwoYear { get; set; } = false;
 
     }
 }
