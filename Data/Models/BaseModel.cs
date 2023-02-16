@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    public class ResponseModel : BaseModel
+    public abstract class BaseModel
     {
-        public Invoice Invoice { get; set; }
-        public string Message  { get; set; }
+        public int Id { get; set; }
     }
 }

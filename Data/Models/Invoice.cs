@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    public class Invoice
+    public class Invoice : BaseModel
     {
-        public int ID { get; set; }
         public string AppliedDiscountDescription { get; set; }
         public double TotalDiscount { get; set; }
         public double TotalAmount { get; set; }
