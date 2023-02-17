@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Models
+namespace DiscountAPI.Models
 {
-    public class Customer : BaseModel
+    public class CustomerModel : BaseModel
     {
         public string Name { get; set; }
         public string SurName { get; set; }

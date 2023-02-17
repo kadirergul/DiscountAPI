@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Models
+namespace DiscountAPI.Models
 {
-    public class Invoice : BaseModel
+    public class InvoiceModel : BaseModel
     {
         public string AppliedDiscountDescription { get; set; }
         public double TotalDiscount { get; set; }
         public double TotalAmount { get; set; }
-        public Customer Customer { get; set; }
+        public List<string> ProductsCategory { get; set; }
+        public CustomerModel Customer { get; set; }
     }
 }

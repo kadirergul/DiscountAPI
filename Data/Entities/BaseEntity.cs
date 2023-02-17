@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Models
+namespace Data.Entities
 {
-    public class RequestModel : BaseModel
+    public class BaseEntity
     {
-        public Invoice Invoice { get; set; }
+        public int Id { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Data.Models;
+﻿using DiscountAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -17,9 +17,9 @@ namespace DiscountAPI.Controllers
         }
 
         [HttpPost("GetDiscountAppliedInvoice")]
-        public ActionResult<Invoice> GetDiscountAppliedInvoice([FromBody]Invoice request)
+        public ActionResult<InvoiceModel> GetDiscountAppliedInvoice([FromBody]InvoiceModel request)
         {
-            //_logger.Log(LogLevel.Information, Request.QueryString.Value);
+            _logger.Log(LogLevel.Information, Request.QueryString.Value);
 
             return Ok("Hello API");
         }

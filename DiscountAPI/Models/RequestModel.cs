@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Models
+namespace DiscountAPI.Models
 {
-    public abstract class BaseModel
+    public class RequestModel : BaseModel
     {
-        public int Id { get; set; }
+        public InvoiceModel Invoice { get; set; }
     }
 }
